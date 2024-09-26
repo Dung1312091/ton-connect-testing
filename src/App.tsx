@@ -4,6 +4,8 @@ import {THEME, TonConnectUIProvider} from "@tonconnect/ui-react";
 import {Footer} from "./components/Footer/Footer";
 import {Header} from "./components/Header/Header";
 import {TxForm} from "./components/TxForm/TxForm";
+const isUseTonBridge = localStorage.getItem('useTonBridge');
+console.log("🚀 ~ isUseTonBridge:", isUseTonBridge)
 
 function App() {
   return (
@@ -87,7 +89,7 @@ function App() {
             // universalLink: "https://t.me/TobiWalletBot?attach=wallet",
             // bridgeUrl: "https://bridge.tonapi.io/bridge",
             universalLink: 'https://t.me/telifidev_bot?attach=wallet',
-            bridgeUrl: 'https://ton-bridge.tobiwallet.app/bridge',
+            bridgeUrl: isUseTonBridge ? 'https://bridge.tonapi.io/bridge' : 'https://ton-bridge.tobiwallet.app/bridge',
             platforms: ["ios", "android", "macos", "windows", "linux"]
           },
         ]

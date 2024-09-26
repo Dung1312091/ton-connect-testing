@@ -1,7 +1,7 @@
 import React, {useCallback, useState} from 'react';
 import ReactJson from 'react-json-view';
 import './style.scss';
-import {SendTransactionRequest, useTonConnectUI, useTonWallet} from "@tonconnect/ui-react";
+import {CHAIN, SendTransactionRequest, useTonConnectUI, useTonWallet} from "@tonconnect/ui-react";
 
 // In this example, we are using a predefined smart contract state initialization (`stateInit`)
 // to interact with an "EchoContract". This contract is designed to send the value back to the sender,
@@ -9,6 +9,7 @@ import {SendTransactionRequest, useTonConnectUI, useTonWallet} from "@tonconnect
 const defaultTx: SendTransactionRequest = {
 	// The transaction is valid for 10 minutes from now, in unix epoch seconds.
 	validUntil: Math.floor(Date.now() / 1000) + 600,
+	network: CHAIN.MAINNET,
 	messages: [
 
 		{

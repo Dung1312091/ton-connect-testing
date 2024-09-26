@@ -84,8 +84,10 @@ function App() {
             name: "Tobi",
             imageUrl: "https://app.tobiwallet.app/icons/logo.png",
             aboutUrl: "https://tobi.fun",
-            universalLink: "https://t.me/TobiWalletBot?attach=wallet",
-            bridgeUrl: "https://bridge.tonapi.io/bridge",
+            // universalLink: "https://t.me/TobiWalletBot?attach=wallet",
+            // bridgeUrl: "https://bridge.tonapi.io/bridge",
+            universalLink: 'https://t.me/telifidev_bot?attach=wallet',
+            bridgeUrl: 'https://ton.bridge.tobiwallet.app/bridge',
             platforms: ["ios", "android", "macos", "windows", "linux"]
           },
         ]

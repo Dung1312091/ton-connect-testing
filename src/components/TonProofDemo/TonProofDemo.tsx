@@ -38,6 +38,8 @@ export const TonProofDemo = () => {
 
 	useEffect(() =>
 		tonConnectUI.onStatusChange(async w => {
+		console.log("🚀 ~ TonProofDemo ~ w:", w)
+
 			if (!w || w.account.chain === CHAIN.TESTNET) {
 				TonProofDemoApi.reset();
 				setAuthorized(false);

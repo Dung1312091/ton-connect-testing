@@ -10,6 +10,7 @@ const defaultTx: SendTransactionRequest = {
 	// The transaction is valid for 10 minutes from now, in unix epoch seconds.
 	validUntil: Math.floor(Date.now() / 1000) + 600,
 	network: CHAIN.MAINNET,
+	from: '',
 	messages: [
 
 		{
@@ -21,6 +22,7 @@ const defaultTx: SendTransactionRequest = {
 			stateInit: 'te6cckEBBAEAOgACATQCAQAAART/APSkE/S88sgLAwBI0wHQ0wMBcbCRW+D6QDBwgBDIywVYzxYh+gLLagHPFsmAQPsAlxCarA==',
 			// (optional) Payload in boc base64 format.
 			payload: 'te6ccsEBAQEADAAMABQAAAAASGVsbG8hCaTc/g==',
+		
 		},
 
 		// Uncomment the following message to send two messages in one transaction.

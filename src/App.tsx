@@ -92,6 +92,15 @@ function App() {
             bridgeUrl: isUseTonBridge ? 'https://bridge.tonapi.io/bridge' : 'https://ton-bridge.tobiwallet.app/bridge',
             platforms: ["ios", "android", "macos", "windows", "linux"]
           },
+          {
+            "appName": "hot",
+            "name": "HOT",
+            "imageUrl": "https://raw.githubusercontent.com/hot-dao/media/main/logo.png",
+            "aboutUrl": "https://hot-labs.org/",
+            "universalLink": "https://t.me/herewalletbot?attach=wallet",
+            "bridgeUrl": "https://sse-bridge.hot-labs.org",
+            "platforms": ["ios", "android", "macos", "windows", "linux"]
+          },
         ]
       }}
       actionsConfiguration={{

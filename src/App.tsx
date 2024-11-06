@@ -94,7 +94,7 @@ function App() {
           },
           {
             "appName": "hot",
-            "name": "HOT",
+            "name": "HOT1",
             "imageUrl": "https://raw.githubusercontent.com/hot-dao/media/main/logo.png",
             "aboutUrl": "https://hot-labs.org/",
             "universalLink": "https://t.me/herewalletbot?attach=wallet",

@@ -16,6 +16,9 @@ export const Header = () => {
             }
             window.location.reload();
         }}>{isUseTonBridge ? 'Use Tobi Bridge' : 'Use Ton Bridge'}</button>
+        <button onClick={()=> {
+            localStorage.clear()
+        }}>Remove Local</button>
         <TonConnectButton />
     </header>
 }

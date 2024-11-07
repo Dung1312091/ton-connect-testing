@@ -86,21 +86,13 @@ function App() {
             name: "Tobi",
             imageUrl: "https://app.tobiwallet.app/icons/logo.png",
             aboutUrl: "https://tobi.fun",
-            universalLink: "https://t.me/TobiCopilotBot/wallet?attach=wallet",
+            universalLink: "https://t.me/TobiCopilotBot?attach=wallet",
             // bridgeUrl: "https://bridge.tonapi.io/bridge",
             // universalLink: 'https://t.me/telifidev_bot/wallet?attach=wallet',
             bridgeUrl: isUseTonBridge ? 'https://bridge.tonapi.io/bridge' : 'https://ton-bridge.tobiwallet.app/bridge',
             platforms: ["ios", "android", "macos", "windows", "linux"]
           },
-          {
-            "appName": "hot",
-            "name": "HOT1",
-            "imageUrl": "https://raw.githubusercontent.com/hot-dao/media/main/logo.png",
-            "aboutUrl": "https://hot-labs.org/",
-            "universalLink": "https://t.me/herewalletbot?attach=wallet",
-            "bridgeUrl": "https://sse-bridge.hot-labs.org",
-            "platforms": ["ios", "android", "macos", "windows", "linux"]
-          },
+          
         ]
       }}
       actionsConfiguration={{
